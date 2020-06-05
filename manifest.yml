@@ -1,0 +1,10 @@
+---
+applications:
+- name: servlet-test
+  buildpack: java_buildpack_offline
+  memory: 1G
+  instances: 1
+  path: target/servlet-test-1.0-SNAPSHOT.war 
+  health-check-type: none
+  env:
+#    JBP_CONFIG_TOMCAT: '{tomcat: { context_path: /HelloWorld }}'
